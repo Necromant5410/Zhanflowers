@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhanflowers</title>
+    <link rel="stylesheet" href="./style.css">        
+    <link rel="stylesheet" href="./style_mob.css">   
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Forum&family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="vacancy-button-container">
+        <button onclick="openModal()" class="vacancy-form-button">Подать заявку</button>
+    </div>
+
+    <div class="modal-background" id="modal" style="display: none;">
+        <div class="vacancy-form-basis">
+            <div class="form-outer-border">
+                <div class="form-inner-border">
+                    <form action="data_collection.php" method="post" class="vacancy-form">
+                        
+                        <img src="./images/logo_zhanflowers.svg" alt="" class="form-zhanflowers-logo">
+                        <p class="form-heading">ХОЧУ РАБОТАТЬ В ZHANFLOWERS</p>
+                        <hr class="form-decoration-line">
+
+                        <div class="vacancy-form-row">
+                            <div class="vacancy-form-initials">
+                                <p class="form-question">ФИО</p>
+                                <input type="text" class="form-input" name="name" required placeholder="Ержан Ержанович Ержанов">
+                            </div>
+                            <div class="vacancy-form-age">
+                                <p class="form-question">Возраст</p>
+                                <input type="text" class="form-input" name="age" required placeholder="16+">
+                            </div>
+                        </div>
+
+                        <div class="vacancy-form-row">
+                            <div class="vacancy-form-phone">
+                                <p class="form-question">Номер телефона</p>
+                                <input type="text" class="form-input" name="phone" required placeholder="+7-XXX-XXX-XXXX">
+                            </div>    
+
+                            <div class="vacancy-form-experience">
+                                <p class="form-question">Опишите ваш прошлый опыт</p>
+                                <input type="text" class="form-input" name="experience" required placeholder="Работал флористом 2 года...">
+                            </div>
+                        </div>
+                                                
+                        <p class="form-question">Результаты вашей работы</p>
+                        <input type="text" class="form-input" name="portfolio" required placeholder="Портфолио: https://instagram.com/ваше_имя">
+
+                        <p class="form-question">Какую должность хотите занимать</p>
+                        <select name="position" class="vacancy-select">
+                            <option value="Продавец-консультант">Продавец-консультант</option>
+                            <option value="Опытный Флорист">Опытный Флорист</option>
+                            <option value="Клиент-менеджер">Клиент-менеджер</option>
+                            <option value="СММ Специалист">СММ Специалист</option>
+                        </select>
+
+                        <div class="vacancy-form-row">
+                            <div class="vacancy-form-salary">
+                                <p class="form-question">Ожидаемая заработная плата</p>
+                                <input type="text" class="form-input" name="salary" required placeholder="₸250 000">
+                            </div>
+                            <div class="vacancy-form-schedule">
+                                <p class="form-question">Ожидаемый график работы</p>
+                                <input type="text" class="form-input" name="schedule" required placeholder="Полная занятость 2/2">
+                            </div>    
+                        </div>
+
+                        <p class="form-question">Что считаете самым важным на работе</p>
+                        <input type="text" class="form-input" name="priority" required placeholder="Честность, внимание к деталям и любовь к цветам">
+
+                        <button type="submit" class="submit-btn">ПОДТВЕРДИТЬ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-logo">
+                <div class="hero-image-wrapper">
+                    <img src="./images/hero_flower.svg">
+                </div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-slogan">Работаем с Душой</p>
+                <p class="hero-name">ZhanFlowers</p>
+                <img src="./images/hero_decoration.svg">
+                <p class="hero-subtitle">Реализуйте свой потенциал, работая там, где ценят таланты и результат</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="location">
+        <h1 class="location-heading">Где мы находимся</h1>
+        <div class="location-container">
+            <div class="location-map" id="location-astana">
+                <iframe id="map_24133620" frameborder="0" width="100%" src="https://makemap.2gis.ru/widget?data=eJzdkM1qwzAQhN9le7Qw-rEs2dBDSGkT6pYkPaSk5ODEIhbIlpGV0jT43avY5CW6x52Z5Zu9gnWVcqp6UbZR3mnVQ_51BX_pFOTwrEp_dgoQdM52yvlRD7L25qZvm7o-NLv-wCpzbN8eg7FS_dHpzmvbBsNqMYvw62Ldv88FLsT6--NpU_v5BRefm5OfR7hYyoLNohA8WmNdiDyUGWVJEja_y7ZSP5ATfJ8BwWkCvYwYE-XK6taPF0IZ3ZZ-LCFkzFLBhEQJjzEROOX7kNcV5JThdED_oyWJmeSMSMRJTBilKb23ZFKSYY-gKbuV7fXEegVTeshHM8kSyYUgGeUcgbnJ07ksTXHQwpdo4LO2CXThYRA6W2O2tVJmN269O6vhD-ctsJg" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+            </div>
+
+            <div class="location-center">
+                <p class="location-title">МЫ ЕСТЬ</p>
+                <p class="location-city">г. Талдыкорган</p>
+                <p class="location-city">г. Астана</p>
+            </div>
+
+            <div class="location-map" id="location-taldykorgan">
+                <iframe id="map_24123683" frameborder="0" width="100%" src="https://makemap.2gis.ru/widget?data=eJw1j8FqwzAQRP9lexVBrmTLFvTa0kMht0BKDo611KKy1sgKNDX-925kuicxMzv7tAIlhwndG9KEOXlcwH6ukO8zgoVX7PMtIQiYE82YcvHZ9jk8_NM0jtfv83JVLgzx44WDDpch-Tl7ihxgYaBAiZ9PffestGbl9z06_AFbyf_ZBHztAPdSv18_ko-5NDCkj30ucKY9qMYoLXR9kJWR7YW3vQPbNma7CJj6-UiL3wFWCH0GW6JNV3WyNXWnOlkLCA9_L9O60bVpdSU10xFNzGa4lX9CIZxGxHAuak433P4AhKte7w" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-left">
+                <p>Сердце нашего дела</p>
+                <img src="./images/about_flower.svg">
+            </div>
+            <div class="about-right">
+                <div class="about-block">
+                    <p class="about-block-title">НАША МИССИЯ</p>
+                    <p class="about-block-text">Мы создаем пространство, где любовь к цветам и флористическое искусство расцветают в каждом букете, принося радость и красоту в жизнь наших клиентов.</p>
+                </div>
+                <div class="about-block">
+                    <p class="about-block-title">НАШИ ЦЕННОСТИ</p>
+                    <p class="about-block-text">Станьте частью сообщества, которое ценит творчество, профессионализм и индивидуальный подход к каждому заказу, воплощая в жизнь самые смелые цветочные фантазии.</p>
+                </div>
+                <div class="about-block">
+                    <p class="about-block-title">НАШ ПОДХОД</p>
+                    <p class="about-block-text">Мы стремимся к совершенству в каждом аспекте нашей работы, постоянно развивая навыки и предлагая только лучшее, чтобы каждый клиент почувствовал нашу заботу и внимание.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies">
+        <div class="vacancies-container">
+            <div class="vacancies-figure">
+                <img src="./images/logo_zhanflowers.svg" class="zhanflowers-logo">
+                <p class="vacancy-heading">Открытые Вакансии</p>
+                <div class="vacancy-name"><img src="./images/vacancy_star.svg"><p>Опытный Флорист</p><img src="./images/vacancy_star.svg"></div>
+                <div class="vacancy-name"><img src="./images/vacancy_star.svg"><p>Продавец-консультант</p><img src="./images/vacancy_star.svg"></div>
+                <div class="vacancy-name"><img src="./images/vacancy_star.svg"><p>Клиент-менеджер</p><img src="./images/vacancy_star.svg"></div>
+                <div class="vacancy-name"><img src="./images/vacancy_star.svg"><p>СММ Специалист</p><img src="./images/vacancy_star.svg"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq-container">
+            <div class="faq-left">
+
+                <p class="faq-heading">FAQs</p>
+
+                <div class="faq-block">
+                    <div class="faq-number">01</div>
+                    <div class="faq-content">
+                        <p class="faq-question">КАК ПОДАТЬ ЗАЯВКУ?</p>
+                        <p class="faq-answer">Вы можете легко подать заявку, заполнив простую форму прямо на нашем сайте. Весь процесс займет у вас всего 1-2 минуты, что позволяет быстро и удобно выразить свой интерес к работе в нашей команде.</p>
+                    </div>  
+                </div>
+
+                <div class="faq-block">
+                    <div class="faq-number">02</div>
+                    <div class="faq-content">
+                        <p class="faq-question">НУЖНО ЛИ ИМЕТЬ ОПЫТ?</p>
+                        <p class="faq-answer">Нет, не всегда. Мы готовы обучать новых сотрудников, если у них есть главное: искреннее желание работать и выполнять свои обязанности с душой. Главное — это ваше стремление развиваться.</p>
+                    </div>  
+                </div>
+
+                <div class="faq-block">
+                    <div class="faq-number">03</div>
+                    <div class="faq-content">
+                        <p class="faq-question">МОЖНО ЛИ РАБОТАТЬ УДАЛЕННО?</p>
+                        <p class="faq-answer">У нас есть ряд позиций, которые предлагают возможность удаленной работы. Это предоставляет гибкий график и удобство, позволяя вам эффективно выполнять задачи из дома.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="faq-right">
+                <img src="./images/faq_sidepicture.svg">
+            </div>
+            
+            <div class="faq-mob-block">
+                <img src="./images/faq_mob.png" alt="" class="faq-mob-picture">
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-container">
+            <img src="./images/reviews_flower_heading.svg" class="reviews-flower-heading">
+            <p class="reviews-heading">Наша команда о нас</p>
+            <img src="./images/reviews_decoration_line.svg" class="reviews-decoration-line">
+
+            <div class="reviews-content">
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <img src="./images/reviews_flower_pink.svg" class="reviews-flower">
+                        <img src="./images/reviews_stars.svg" class="reviews-stars">
+                    </div>    
+
+                    <div class="review-card-content">
+                        <p class="review-text">МНЕ НРАВИТСЯ БЫТЬ ЧАСТЬЮ ZHANFLOWERS! ЗДЕСЬ Я НАШЛА НЕ ПРОСТО РАБОТУ, А КОМАНДУ, КОТОРАЯ СТАЛА ВТОРОЙ СЕМЬЕЙ. ОЧЕНЬ ПРИЯТНО ВИДЕТЬ КАК КЛИЕНТЫ РАДУЮТСЯ НАШИМ БУКЕТАМ.</p>
+                    </div>
+                    
+                    <div class="review-card-bottom">
+                        <img src="./images/reviews_zhanna.jpg" class="reviews-author-picture">
+                        <div class="review-author-container">
+                            <p class="review-author">ЖАННА СЕЙДАЛИНА</p>
+                            <p class="review-author-title">СПЕЦИАЛИСТ ПО РАБОТЕ С КЛИЕНТАМИ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <img src="./images/reviews_flower_white.svg" class="reviews-flower">
+                        <img src="./images/reviews_stars.svg" class="reviews-stars">
+                    </div> 
+
+                    <div class="review-card-content">
+                        <p class="review-text">КАЖДЫЙ ДЕНЬ В ZHANFLOWERS - ЭТО ШАНС УЧИТЬСЯ И РАСТИ. АТМОСФЕРА В КОЛЛЕКТИВЕ МОТИВИРУЕТ, А ЛЮБОВЬ К ЦВЕТАМ ОБЪЕДИНЯЕТ НАС ВСЕХ.</p>
+                    </div>
+                    
+                    <div class="review-card-bottom">
+                        <img src="./images/reviews_aliya.jpg" class="reviews-author-picture">
+                        <div class="review-author-container">
+                            <p class="review-author">АЛИЯ НУРТАЕВА</p>
+                            <p class="review-author-title">ФЛОРИСТ С 4-ЛЕТНИМ ОПЫТОМ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <img src="./images/reviews_flower_blue.svg" class="reviews-flower">
+                        <img src="./images/reviews_stars.svg" class="reviews-stars">
+                    </div>    
+
+                    <div class="review-card-content">
+                        <p class="review-text">РАБОТА В ZHANFLOWERS ВДОХНОВЛЯЕТ КАЖДЫЙ ДЕНЬ! КОМАНДА ЗДЕСЬ НЕВЕРОЯТНО ТЁПЛАЯ И ПОДДЕРЖИВАЮЩАЯ. Я ЧУВСТВУЮ, ЧТО МОИ ИДЕИ ЦЕНЯТ, И Я ДЕЙСТВИТЕЛЬНО ВЛИЯЮ НА РЕЗУЛЬТАТ.</p>
+                    </div>
+                    
+                    <div class="review-card-bottom">
+                        <img src="./images/reviews_zhaniya.jpg" class="reviews-author-picture">
+                        <div class="review-author-container">
+                            <p class="review-author">ЖАНИЯ АХМЕТОВА</p>
+                            <p class="review-author-title">КУРЬЕР И ПОМОЩНИК ФЛОРИСТА</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-about">
+                <p class="footer-about-heading">О нас</p>
+                <p class="footer-about-text">Ищем тех, кто любит красоту и хочет расти вместе с нами. Оставьте заявку — мы на связи!</p>
+            </div>
+            
+            <div class="footer-contact">
+                <p class="footer-contact-heading">Свяжитесь с нами</p>
+
+                <div class="footer-contact-row">
+                    <img src="./images/footer_phone.svg" alt="">
+                    <p>: +7 (707)-107-52-52</p>
+                </div>
+
+                <div class="footer-contact-row">
+                    <img src="./images/footer_envelope.svg" alt="">
+                    <p>: info.zhanflowers@gmail.com</p>
+                </div>
+
+                <div class="footer-contact-row">
+                    
+                    <img src="./images/footer_pin.svg" alt="">
+                    
+                    <div class="footer-contact-location">
+                        <p>: г.Астана, ул.Анет-Баба 2</p>
+                        <p>г.Талдыкорган, пр.Назарбаева 68/78</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-follow">
+                <p class="footer-follow-heading">Следите за нами</p>
+                <div class="footer-follow-socials">
+                    <a href="https://shorturl.at/90xyJ"><img src="./images/footer_tiktok.svg" alt=""></a>
+                    <a href="https://shorturl.at/87NtB"><img src="./images/footer_whatsapp.svg" alt=""></a>
+                    <a href="https://shorturl.at/5SBdM"><img src="./images/footer_instagram.svg" alt=""></a>
+                </div>
+                <div class="footer-follow-zhanflowers">
+                    <img src="./images/logo_zhanflowers.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZhanFlowers. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="form-success-popup" class="form-success-popup" style="display: none;">
+        <p class="form-success-text">Спасибо! Ваша заявка успешно отправлена ✔</p>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+@media (max-width: 768px) {
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        padding: 0 5vw;
+        max-height: none;
+        height: auto;
+    }
+    .hero-logo {
+        margin: 10vw 0;
+    }
+    .hero-image-wrapper img {
+        width: 90%;
+    }
+    .hero-image-wrapper::before {
+        left: 30%;
+        top: 25%;
+        font-size: clamp(21px, 34vw, 150px);
+    }
+    .hero-image-wrapper::after {
+        left: 65%;
+        top: 72%;
+        font-size: clamp(21px, 34vw, 150px);
+    }
+    .hero-content img {
+        width: 32%;
+    }
+    .hero-name {
+        font-size: clamp(13px, 16vw, 130px);
+        margin: 5vw 0 5vw 0;
+    }
+    .hero-slogan {
+        font-size: clamp(4.5px, 7vw, 45px);
+        margin-top: 10vw;
+    }
+    .hero-subtitle {
+        font-size: clamp(4.8px, 4.5vw, 28px);
+        width: 80%;
+        margin: 4.5vw 0 6vw 0;
+    }
+
+    
+    .location {
+        max-height: none;
+        padding-bottom: 15vw;
+    }
+    .location-heading {
+        font-size: clamp(6.4px, 9vw, 64px);
+        margin-bottom: 6vw;
+    }
+    .location-container {
+        flex-direction: column-reverse;
+        gap: 15vw;
+    }
+    .location-map iframe {
+        width: 40vw;
+    }
+    .location-center {
+        width: 100vw;
+        padding: 22vw 0 8vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    .location-center::before {
+        display: none;
+    }
+    .location-center::after {
+        display: none;
+    }
+    #location-taldykorgan::after {
+        font-size: clamp(2.2px, 4vw, 22px);
+        left: -6%;
+    }
+    #location-astana::after {
+        font-size: clamp(2.2px, 4vw, 22px);
+    }
+    #location-taldykorgan::before {
+        right: -37%;
+        bottom: -2.85%;
+        width: 40vw;
+    }
+    #location-astana::before {
+        left: -28%;
+        top: -15%;
+        width: 40vw;
+    }
+    .location-title {
+        font-size: clamp(4px, 7vw, 40px);
+    }
+    .location-city {
+        font-size: clamp(3.2px, 5vw, 32px);
+        margin: 5vw 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        width: 100vw;
+        gap: 5vw;
+        padding: 6vw 0;
+    }
+    .about-left {
+        margin: 0;
+        width: 70%;
+        align-items: center;
+    }
+    .about-left img {
+        width: 70%;
+    }
+    .about-left p{
+        margin: 0;
+        width: 100%;
+        font-size: clamp(6px, 12vw, 60px);
+    }
+    .about-right {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    .about-block {
+        width: 80%;
+    }
+    .about-block-title {
+        font-size: clamp(2px, 4.5vw, 20px);
+        margin: 2vw 0 0;
+    }
+    .about-block-text {
+        font-size: clamp(2.2px, 4.2vw, 22px);
+        line-height: 4vw;
+        margin: 1vw 0 2vw 0;
+    }
+
+    .vacancies-container {
+        padding: 25vw 0 15vw 0;
+    }
+    .vacancies-figure {
+        width: 75vw;
+        border-top-left-radius: 44vw 40vw;
+        border-top-right-radius: 44vw 40vw;
+        padding: 4vw 0 7vw 0;
+    }
+    .zhanflowers-logo {
+        width: 25vw;
+    }
+    .vacancy-heading {
+        font-size: clamp(5px, 8vw, 50px);
+        width: 40vw;
+        margin: 1vw 0 3vw 0;
+    }
+    .vacancy-name {
+        max-width: 60vw;
+        font-size: clamp(4px, 4vw, 40px);
+    }
+    .vacancies-figure::before{
+        right: 48%;
+        bottom: 35%;
+        width: 33vw;
+        z-index: -1;
+    }
+    .vacancies-figure::after {
+        left: 92%;
+        bottom: 35%;
+        width: 33vw;
+        z-index: -1;
+    }
+
+    .faq-heading {
+        margin: 6vw 0 5vw 0;
+        font-size: clamp(6.8px, 7vw, 68px);
+    }
+    .faq-right {
+        display: none;
+    }
+    .faq-left {
+        padding: 6vw 8vw 4vw;
+    }
+    .faq-block {
+        padding: 5vw 0;
+    }
+    .faq-number {
+        font-size: clamp(6px, 8vw, 60px);
+        margin: 0 2vw 0 0.4vw;
+    }
+    .faq-question {
+        font-size: clamp(2.4px, 4vw, 24px);
+        margin: 0 0 0 0.5vw 0;
+    }
+    .faq-answer {
+        font-size: clamp(6px, 3.5vw, 60px);
+        margin: 0;
+    }
+    .faq-container {
+        flex-direction: column;
+    }
+    .faq-mob-block {
+        display: flex;
+    }
+    .faq-mob-block img {
+        width: 100%;
+    }
+
+    
+    .reviews-container {
+        padding: 8vw 0 12vw;
+    }
+    .reviews-heading {
+        font-size: clamp(6.6px, 10vw, 66px);
+    }
+    .reviews-flower-heading {
+        width: 30%;
+    }
+    .reviews-decoration-line {
+        width: 70%;
+    }
+    .reviews-content {
+        flex-direction: column;
+        gap: 6vw;
+        margin-top: 8vw;
+    }
+    .review-card {
+        width: 75vw;
+        padding: 8vw 4vw;
+        gap: 4vw;
+    }
+    .reviews-flower {
+        width: 15vw;
+    }
+    .reviews-stars {
+        width: 30vw;
+    }
+    .review-text {
+        font-size: clamp(1.8px, 4vw, 18px);
+        width: 96%;
+        line-height: 4vw;
+    }
+    .review-card-bottom {
+        justify-content: center;
+    }
+    .review-author {
+        font-size: clamp(1.4px, 2.8vw, 14px);
+    }
+    .review-author-title {
+        font-size: clamp(1.2px, 2.5vw, 12px);
+        width: 40vw;
+    }
+    .reviews-author-picture {
+        width: 12vw;
+    }
+
+
+    .footer {
+        padding-top: 10vw;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 8vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-about {
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-contact {
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-follow {
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: none;
+    }
+    .footer-about-text, 
+    .footer-contact-row p {
+        font-size: clamp(4px, 4.5vw, 40px);
+        line-height: 7vw;
+    }
+    .footer-bottom {
+        font-size: clamp(4px, 4vw, 40px);
+    }
+    .footer-contact-heading, 
+    .footer-follow-heading, 
+    .footer-about-heading {
+        font-size: clamp(4px, 7vw, 40px);
+        text-align: center;
+        margin: 0 0 4vw 0;
+    }
+    .footer-contact img {
+        width: 7%;
+        margin: 0.3vw 1vw 0 5vw;
+    }
+    .footer-follow-socials {
+        gap: 6vw;
+    }
+    .footer-follow-socials img {
+        width: 10vw;
+    }.footer-follow-zhanflowers img {
+        width: 40vw;
+        height: auto;
+        margin-top: 4vw;
+    }
+
+
+    .vacancy-form-basis {
+        width: 85vw;
+    }
+    .vacancy-form {
+        padding: 6vw 6vw 22vw;
+    }
+    .vacancy-form-button {
+        bottom: 2vw;
+        right: 50%;
+        transform: translate(50%);
+        padding: 3vw 6vw;
+        font-size: clamp(6px, 4.5vw, 60px);
+        border-radius: 100vw;
+    }
+    .vacancy-form-button:hover {
+        transform: translate(50%);
+        right: 50%;
+    }
+    .form-zhanflowers-logo {
+        width: 35vw;
+    }
+    .form-heading {
+        font-size: clamp(6px, 5.8vw, 60px);
+        margin: 4vw 0 0;
+    }
+    .form-decoration-line {
+        margin: 3vw 0 6vw;
+    }
+    .form-question {
+        font-size: clamp(4px, 3.6vw, 40px);
+        margin: 4vw 0;
+    }
+    .form-input {
+        font-size: clamp(4px, 3.6vw, 40px);
+        height: 4.5vw;
+        border-radius: 2vw; 
+    }
+    .form-input::placeholder {
+        font-size: clamp(4px, 2.7vw, 40px);
+    }
+    .vacancy-select {
+        height: 5vw;
+        font-size: clamp(4px, 3.6vw, 40px); 
+        border-radius: 2vw;
+        background-size: 5vw;
+    }
+    .vacancy-form-row {
+        gap: 5vw;
+    }
+    .vacancy-form-schedule p,
+    .vacancy-form-salary p{
+        flex: 1;
+        width: 100%;
+    }
+    .submit-btn {
+        padding: 2vw 4vw;
+        font-size: clamp(4px, 3.6vw, 40px);
+        margin-top: 20vw;
+    }
+    .form-outer-border::before { 
+        left: 15%;
+        top: 94%;
+        width: 31vw;
+    }
+    .form-outer-border::after {
+        width: 31vw;
+        left: 86%;
+        top: 88%;
+    } 
+    .form-success-popup {
+        bottom: auto;
+        top: 4vw;  
+        padding: 4vw 8vw;
+        font-size: clamp(4px, 3.5vw, 40px);
+        box-shadow: 0 0 4vw 2vw rgba(0, 0, 0, 0.2);
+        max-width: 80vw;
+        white-space: nowrap; 
+        animation: slide-down-mobile 5s ease forwards;
+    }
+   
+}
